@@ -1,3 +1,7 @@
+body {
+  margin-bottom: 300px;
+}
+
 .sample01 {
   border: 1px solid #76a3af;
   border-radius: 4px;
@@ -221,4 +225,118 @@
   top: 10px;
   left: 10px;
   transition: all 1s cubic-bezier(0.165, 0.84, 0.44,1);
+}
+
+.sample15 {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #2a94b9;
+  border: 1px solid #317aaf;
+  background-color: #b9dffb;
+  transition: all 1s;
+}
+.rotate720 {
+  transform: rotate(-360deg);
+}
+
+.sample16 {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #2a94b9;
+  border: 1px solid #317aaf;
+  background-color: #b9dffb;
+  transition: all 1s;
+  transform-origin: right bottom;
+}
+.rotate720 {
+  transform: rotate(360deg);
+}
+
+.sample17 {
+  margin: 30px 0;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #2a94b9;
+  border: 1px solid #317aaf;
+  background-color: #b9dffb;
+  transition: all 1s;
+}
+.rotateY720 {
+  transform: rotateY(720deg);
+}
+
+.sample18 {
+  margin: 30px 0;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #2a94b9;
+  border: 1px solid #317aaf;
+  background-color: #b9dffb;
+  transition: all 1s;
+  transform-origin: right;
+}
+
+.sample19 {
+  margin: 30px 0;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #2a94b9;
+  border: 1px solid #317aaf;
+  background-color: #b9dffb;
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.sample19:hover {
+  transform: translate(300px);
+  opacity: 0;
+}
+
+.sample20 {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #096313;
+  color: #fff;
+  transition: all .5s;
+}
+.sample20:hover {
+  transform: skewX(-40deg);
+}
+
+.sample21 {
+  margin: 30px;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #096313;
+  color: #fff;
+  transition: all .5s;
+}
+.sample21:hover {
+  transform: skew(-40deg, 60deg);
+}
+
+.sample22 {
+  width: 50px;
+  height: 50px;
+  background-color: #d8bff8;
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.mix {
+  transform: translate(300px) rotate(720deg) scale(3,2);
+  opacity: .3;
 }
