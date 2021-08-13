@@ -203,3 +203,22 @@
   background-color: #b7292b;
   border-color: #ed8cbd;
 }
+
+.sample14 {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  border: 1px solid rgba(0, 0, 0, .1);
+  background: #e6fcfa;
+}
+
+.sample14_circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: #4c926c;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44,1);
+}
