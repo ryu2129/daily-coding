@@ -177,3 +177,29 @@
   border-color: #abf4a8;
 }
 
+.sample12 {
+  width: 400px;
+  height: 200px;
+  background-color: #bedbf7;
+  border: 1px solid #658cbb;
+  transition: all 3s;
+}
+.sample12_inner {
+  margin: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #f4c9ca;
+  border: 1px solid #cd8e8f;
+  transition: all 1s;
+}
+
+.sample12.jq_trans {
+  border-color: #294f88;
+  border: 1px solid #173072;
+}
+
+.sample12_inner.jq_trans {
+  transform: translate(300px, 100px) rotate(1080deg);
+  background-color: #b7292b;
+  border-color: #ed8cbd;
+}
