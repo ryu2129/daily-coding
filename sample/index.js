@@ -34,4 +34,39 @@ jQuery(function($){
     $('.sample22').click(function(){
         $(this).toggleClass('mix')
     })
+
+    $('.menu_button').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+    })
+
+    $('.menu_button2').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+    })
+
+    $('.animation_03').on({
+        "click":function() {
+            $(this).addClass("start_anime01");
+        },
+        "animationed":function(){
+            $(this).removeClass("start_anime01")
+        }
+    });
+
+    $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop();
+        $('.animation_04').each(function() {
+            var elPosition = $(this).offset().top;
+            if (scrollY > elPosition - windowH) {
+                $(this).addClass("start_anime02");
+            }else{
+                $(this).removeClass("start_anime02")
+            }
+        });
+    });
+
+    
+
 });
