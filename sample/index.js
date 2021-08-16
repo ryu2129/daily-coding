@@ -67,6 +67,46 @@ jQuery(function($){
         });
     });
 
-    
+    $('.animation_06').hover(function() {
+        $(this).addClass("start_anime04");
+    },
+    function() {
+        $(this).removeClass("start_anime04")
+    });
+
+    $('.animate04').on('click', function() {
+        $(this).addClass('animated shake').one('webkitAnimationEnd animationend',
+        function() {
+            $(this).removeClass('animated shake')
+        });
+    });
+
+    $('.animate05').hover(function() {
+        $(this).addClass('animated rubberBand')
+    },
+    function() {
+        $(this).removeClass('animated rubberBand')
+    });
+
+    var animationEnd = "webkitAnimationEnd animationend";    
+    $('.animate06').on({
+        "mouseover":function() {
+            $(this).addClass("animated rubberBand").one(animationEnd,
+                function() {
+                    $(this).removeClass('animated rubberBand')
+                });
+        }
+    });
+
+    $(window).scroll(function() {
+        var windowH = $(window).height(),
+        scrollY = $(window).scrollTop();
+        $('.animate07').each(function() {
+            var elPosition = $(this).offset().top;
+            if (scrollY > elPosition - windowH) {
+                $(this).addClass("animated bounceInLeft");
+            }
+        })
+    })
 
 });
