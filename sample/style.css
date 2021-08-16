@@ -703,3 +703,157 @@ body {
 .as_01:hover .transform01 {
   transform: scale(1.2);
 }
+
+
+.as_02 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-width: 480px;
+  min-width: 240px;
+  margin: auto;
+}
+.as_02 img {
+  width: 100%;
+  border: 5px solid rgba(197,126,13,1.00);
+}
+.caption {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  transition: .3s;
+  opacity: 1;
+  color: #fff;
+  text-align: center;
+}
+.caption h2 {
+  margin-top: 4%;
+  font-size: 16px;
+  color: #fff;
+}
+.as_02:hover .caption {
+  top: 0;
+  left: 0;
+}
+.transform02 {
+  transform: scale(1);
+  transition: all .3s ease-in-out;
+}
+.as_02:hover .transform02 {
+  transform: scale(1.05);
+}
+.as_02 p {
+  margin: 5px auto;
+  padding: 0 10px;
+}
+a.contact {
+  color: #b0edf8;
+}
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 520px) {
+  .caption h2 {
+    font-stretch: 9px;
+    font-size: 20px;
+    color: #fff;
+  }
+  .hide {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .as_02 p {
+    margin: 10px auto;
+  }
+  .caption h2 {
+    font-stretch: 9px;
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+.view {
+  width: 300px;
+  height: 200px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.view .mask,
+.view .content {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.view h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  background: transparent;
+  margin: 20px 40px 0px 40px;
+  transform: translate(200px, -200px);
+  transition: all .2s ease-in-out;
+}
+.view p {
+  font-size: 12px;
+  position: relative;
+  color: #fff;
+  padding: 10px 20px 20px;
+  text-align: center;
+  transform: translate(-200px, 200px);
+  transition: all 0.2s ease-in-out;
+}
+.view a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000;
+  border-radius: 4px;
+  transform: translate(0px, 100px);
+  transition: transform 0.5s 0.1s ease-in-out;
+}
+.view a.info:hover {
+  box-shadow: 0 0 5px ease-in-out;
+}
+.view .mask {
+  background-color: rgba(0,0,0,0.4);
+  width: 450px;
+  height: 450px;
+  opacity: 0;
+  transform: translate(265px, 145px) rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
+.view:hover .mask {
+  opacity: 1;
+  transform: translate(-80px, 125px) rotate(45deg);
+}
+.view:hover h2 {
+  transform: translate(0px, 0px);
+  transition-delay: 0.3s;
+}
+.view:hover p {
+  transform: translate(0px, 0px);
+  transition-delay: 0.4s;
+}
+.view:hover .mask {
+  transform: translate(0px, 0px);
+  transition-delay: 0.6s;
+}
