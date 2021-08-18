@@ -1,0 +1,27 @@
+body {
+    background-color: #ccc;
+}
+#container {
+    background-color: #E4F5DA;
+    border: 1px solid #aaa;
+}
+#main {
+    background-color: #fff;
+}
+#navi {
+    background-color: #48722E;
+}
+h1 {
+    color: #666;
+    font-weight: normal;
+}
+h2 {
+    color: #999;
+    background-color: #eee;
+}
+p {
+    color: #999;
+}
+ul {
+    color: #E1F8AF;
+}
